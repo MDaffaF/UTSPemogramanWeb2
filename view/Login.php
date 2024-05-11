@@ -25,9 +25,9 @@ class LoginForm {
 // Override
 class CustomLoginForm extends LoginForm {
     public function validateUser($username, $password) {
-        if ($username === "admin" && $password === "admin123") {
+        if ($username === "daffa" && $password === "daffa11") {
             return true;
-        } elseif ($username === "user" && $password === "user123") {
+        } elseif ($username === "fikriawan" && $password === "fikri11") {
             return true;
         } else {
             return false;
@@ -41,9 +41,9 @@ class CustomLoginForm extends LoginForm {
             $password = $arguments[1];
             $role = $arguments[2];
 
-            if ($username === "admin" && $password === "admin123" && $role === "admin") {
+            if ($username === "daffa" && $password === "daffa11" && $role === "admin") {
                 return true;
-            } elseif ($username === "user" && $password === "user123" && $role === "user") {
+            } elseif ($username === "fikriawan" && $password === "fikri11" && $role === "user") {
                 return true;
             } else {
                 return false;

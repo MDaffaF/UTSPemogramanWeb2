@@ -15,8 +15,8 @@
 
 .container {
     width: 85%;
-    margin: 0 auto; /* Membuat container berada di tengah */
-    text-align: justify; /* Ratakan teks */
+    margin: 0 auto;
+    text-align: justify;
 }
 
 .topnav {
@@ -62,14 +62,14 @@
 
 .program-container {
     display: flex;
-    gap: 20px; /* Jarak antara gambar dan teks */
-    align-items: center; /* Posisi vertikal menjadi tengah */
+    gap: 20px;
+    align-items: center;
 }
 </style>
 </head>
 <body>  
   <?php
-  //Inheritance
+ 
 class TVRIProgram {
     protected $image;
     protected $title;
@@ -95,7 +95,7 @@ class TVRIProgram {
   }
   
 }
-
+ //Inheritance
 class Sampurasun extends TVRIProgram {
     public function __construct($image, $title, $description) {
         parent::__construct($image, $title, $description);
@@ -142,23 +142,28 @@ class MusikBox extends TVRIProgram {
             'Sampurasun', '
             Sampurasun is a program with the theme of the latest news every day, of course also with experienced resource persons in their fields. This program aims to provide up-to-date information to the audience while also presenting insights from relevant experts.');
             $sampurasun->displayProgram();
+            echo '<br>';
             
             $sos = new SOS('https://scontent-cgk2-1.xx.fbcdn.net/v/t39.30808-6/241951986_2967168386933741_6607488718753922540_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFO8Y9Y3rkAR3G6OVqcaC5GJV2DaR3gFh0lXYNpHeAWHfiAqVUUxQZ0MBl8qVDEtxCWHoIXe9fzAUUBsnEHFqov&_nc_ohc=LpC-6XZ3IaUQ7kNvgE9fp-A&_nc_ht=scontent-cgk2-1.xx&oh=00_AYA7NpzmnCzOKFBlWlOKoeITX3bc_8aYvxlYvO0TFGC7YA&oe=6643CE40',
             'SOS (Sule Ogi Show)', 'One of the superior comedy programs owned by TVRI West Java, with the presence of top Indonesian comedian Kang Sule, the SOS program has succeeded in becoming a popular event for all groups.');
             $sos->displayProgram();
-            
+            echo '<br>';
+
             $dokterKita = new DokterKita('https://scontent-cgk2-1.xx.fbcdn.net/v/t1.6435-9/201034368_2899663633684217_8195049718897025927_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG-MVL-j2U8YccUPr1VBxRJQ-xV4MzZrApD7FXgzNmsCqQ3PCe5iCdhmjR9lJ77e8IJdG5HqyCz5R0BOwzD8c9l&_nc_ohc=Iu9GGL1igpcQ7kNvgEReFrR&_nc_ht=scontent-cgk2-1.xx&oh=00_AYDC8FtMOOADcrCcKH1DPd61HLXgpjY3lVq2jGSrdp2Diw&oe=66657FC8', 
             'Dokter Kita', 'Dokter Kita, is a health program that educates and provides information or tips about health. The presence of resource persons are doctors from well-known hospitals in Bandung with various experiences in the health sector.');
             $dokterKita->displayProgram();
+            echo '<br>';
 
             $sangkreator = new SangKreator('https://scontent-cgk1-2.xx.fbcdn.net/v/t39.30808-6/424812950_18304951588120906_8336764203195276604_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFqayzu7GpVl8JYqk90qL6M5NcD8wXeNdrk1wPzBd412r5aDgv8O1awAD2PcAbh6YsnxraxdseG11hQiwWd0rZd&_nc_ohc=dBg6OgKwGOQQ7kNvgGDndbl&_nc_ht=scontent-cgk1-2.xx&oh=00_AYAwdKoAeB8ZRRtnf6Ypb4f-_FS0CNU2V_lZvjbxoDxC7Q&oe=664493E8', 
             'Sang Kreator', 'Program that highlights the process of creating and developing creative SMEs around the West Java region, including areas such as traditional fabric production and various other products that embody the artistic value and unique characteristics of the region. This program serves as a platform to delve into the various stages involved in creating these creative products, from design and manufacturing to marketing. Thus, "Sang Kreator" not only promotes the cultural richness and local artistry but also provides inspiration and support for SMEs to grow and compete more effectively in the market.');
             $sangkreator->displayProgram();
-            
+            echo '<br>';
+
             $cahayaqalbu = new CahayaQalbu('https://scontent-cgk1-2.xx.fbcdn.net/v/t39.30808-6/415261839_18300764107120906_6032105170890526897_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHnPVSGwhP-TVcr_xuIFlW7Ulyvz4zzN4JSXK_PjPM3gvH6dftNCl7QHPPFzu7jszL7WLv9witYKaDs3VRRD3VJ&_nc_ohc=ah2MjDFhBegQ7kNvgHz9VwU&_nc_ht=scontent-cgk1-2.xx&oh=00_AYA_Cdlv4jatsOSFatDWsPKI6l12wwetJgKO_FNZBHGxeg&oe=66449B45', 
             'Cahaya Qalbu', 'Program on TVRI West Java aims to provide enlightenment and motivation to viewers through content with religious and spiritual nuances. The program presents various materials such as religious lectures, Islamic studies, and values of goodness and wisdom in daily life. "Cahaya Qalbu" serves as a means for viewers to gain insights and inspiration that enrich the spirit and provide a positive direction in life.');
             $cahayaqalbu->displayProgram();
-            
+            echo '<br>';
+
             $musikBox = new MusikBox('https://scontent-cgk1-2.xx.fbcdn.net/v/t39.30808-6/323360165_710853907335008_4847727529837320379_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE9vSt9o_XSK8c4QxfiyDjH6juyWSkHbQnqO7JZKQdtCUZJLdIjnn8FRUeJfybU9nbOfRGbaje0HYlsuA7knkdC&_nc_ohc=ErH_ZtjBGnIQ7kNvgG7hclr&_nc_ht=scontent-cgk1-2.xx&oh=00_AYDR72dJB7iuCMHfD46v9nz4lrwExzA2n9oezR7Fbj904g&oe=664498DB', 
             'Musik Box', 'Music program that showcases various genres of music from local to international. The show provides opportunities for local musicians and bands to perform and introduce their works to the audience. Additionally, "Musik Box" often invites famous musicians from both domestic and international scenes as guest stars, making it a platform that promotes local musical talent while expanding appreciation for music across different genres.');
             $musikBox->displayProgram();

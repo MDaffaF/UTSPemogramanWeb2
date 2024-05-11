@@ -15,8 +15,8 @@
 
 .container {
     width: 85%;
-    margin: 0 auto; /* Membuat container berada di tengah */
-    text-align: justify; /* Ratakan teks */
+    margin: 0 auto;
+    text-align: justify;
 }
 
 .topnav {
@@ -65,6 +65,7 @@
 <body>
 
   <?php
+  //inheritance
   class TVRIContent {
     private $image;
     private $content;
